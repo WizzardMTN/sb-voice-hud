@@ -1,5 +1,5 @@
 VoiceHUD: A Voice-Controlled Interface Using Yaca
-Welcome to the VoiceHUD project! This is an innovative voice-controlled interface designed to enhance user interaction through voice commands. Built using the Yaca (Yet Another Command Assistant) library, VoiceHUD aims to provide a seamless and intuitive user experience. Please note that this project is still in development, and we welcome contributions and feedback from the community.
+Welcome to the VoiceHUD project! This is an innovative voice-controlled interface designed to enhance user interaction. Built using the Yaca (Yet Another Command Assistant) library, VoiceHUD aims to provide a seamless and intuitive user experience. Please note that this project is still in development, and we welcome contributions and feedback from the community.
 
 Features:
 Voice Command Recognition: Utilize the power of Yaca to recognize and execute voice commands.
