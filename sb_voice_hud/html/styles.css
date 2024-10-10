@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+#voice-range, #voice-icon {
+    transition: opacity 0.2s ease-in-out;
+}
+
+#voice-range {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#voice-hud {
+    position: absolute;
+    bottom: 3.5em;
+    left: 0.5em;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#voice-circle {
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0 auto;
+}
+
+
+#voice-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 0.32em solid transparent;
+    background: conic-gradient(from 0deg, var(--fill-color, #ffffff) var(--fill, 0%), transparent 0) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+#voice-icon {
+    width: 60%;
+    height: 60%;
+    z-index: 1;
+}
+/*
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#preview-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#preview-button:hover {
+    background-color: #45a049;
+}
+*/
+#voice-hud.hidden {
+    display: none;
+}
+
+#voice-hud div {
+    margin-bottom: 5px;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-on {
+    background-color: #00ff00;
+}
+
+.status-off {
+    background-color: #ff0000;
+}
+
+.status-talking {
+    background-color: #ffff00;
+}
